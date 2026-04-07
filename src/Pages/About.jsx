@@ -12,7 +12,7 @@ const Header = memo(() => (
         data-aos="zoom-in-up"
         data-aos-duration="600"
       >
-        About Me
+        Quem sou eu?
       </h2>
     </div>
     <p 
@@ -21,7 +21,7 @@ const Header = memo(() => (
       data-aos-duration="800"
     >
       <Sparkles className="w-5 h-5 text-purple-400" />
-      Transforming ideas into digital experiences
+      Dev por amor
       <Sparkles className="w-5 h-5 text-purple-400" />
     </p>
   </div>
@@ -160,16 +160,16 @@ const AboutPage = () => {
       icon: Code,
       color: "from-[#6366f1] to-[#a855f7]",
       value: totalProjects,
-      label: "Total Projects",
-      description: "Innovative web solutions crafted",
+      label: "Todos Projetos",
+      description: "Inovando com projetos legais",
       animation: "fade-right",
     },
     {
       icon: Award,
       color: "from-[#a855f7] to-[#6366f1]",
       value: totalCertificates,
-      label: "Certificates",
-      description: "Professional skills validated",
+      label: "Certificados",
+      description: "Habilidades técnicas comprovadas",
       animation: "fade-up",
     },
     {
@@ -177,7 +177,7 @@ const AboutPage = () => {
       color: "from-[#6366f1] to-[#a855f7]",
       value: YearExperience,
       label: "Years of Experience",
-      description: "Continuous learning journey",
+      description: "Aprendizado a longo prazo",
       animation: "fade-left",
     },
   ], [totalProjects, totalCertificates, YearExperience]);
@@ -201,7 +201,7 @@ const AboutPage = () => {
               data-aos-duration="1000"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-                Hello, I'm
+                Olá! Eu sou
               </span>
               <span 
                 className="block mt-2 text-gray-200"
@@ -209,7 +209,7 @@ const AboutPage = () => {
                 data-aos-duration="1300"
                 itemProp="name"
               >
-                Eki Zulfar Rachman
+                Breno Alves
               </span>
             </h2>
             
@@ -218,8 +218,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-        Saya adalah mahasiswa Teknik Informatika yang berfokus pada pengembangan Front-End. 
-Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan.
+            Um desenvolvedor full stack. Trabalho com diversas tecnologias, criando projetos funcionais e bem estruturados. Em 2019, participei e venci um Nasa Experience, uma experiência que ampliou minha forma de enxergar tecnologia e a programação.
                   </p>
 
                {/* Quote Section */}
@@ -240,7 +239,7 @@ Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupay
         </div>
         
         <blockquote className="text-gray-300 text-center lg:text-left italic font-medium text-sm relative z-10 pl-6">
-          "Leveraging AI as a professional tool, not a replacement."
+          "Utilizar a IA como uma ferramenta profissional, não como um substituto."
         </blockquote>
       </div>
 

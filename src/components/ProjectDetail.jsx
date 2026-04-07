@@ -77,7 +77,7 @@ const ProjectStats = ({ project }) => {
             {techStackCount}
           </div>
           <div className="text-[10px] md:text-xs text-gray-400">
-            Total Teknologi
+            Total Tech
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ const ProjectStats = ({ project }) => {
             {featuresCount}
           </div>
           <div className="text-[10px] md:text-xs text-gray-400">
-            Fitur Utama
+            sei la
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@ const handleGithubClick = (githubLink) => {
     Swal.fire({
       icon: "info",
       title: "Source Code Private",
-      text: "Maaf, source code untuk proyek ini bersifat privat.",
+      text: "código-fonte para esse projeto é privado.",
       confirmButtonText: "Mengerti",
       confirmButtonColor: "#3085d6",
       background: "#030014",
@@ -156,25 +156,25 @@ const ProjectDetails = () => {
     );
   }
 
-  const projectUrl = `https://ekizr.com/project/${toSlug(project.Title)}`;
+  const projectUrl = ``;
 
   return (
     <>
       <Helmet>
-        <title>{project.Title} — Eki Zulfar Rachman</title>
+        <title>{project.Title} — Breno Alves</title>
         <meta
           name="description"
           content={
             project.Description
               ? project.Description.slice(0, 155)
-              : `Project ${project.Title} oleh Eki Zulfar Rachman — Frontend Web Developer.`
+              : `Project ${project.Title} Breno Alves — Full-Stack Web Developer.`
           }
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={projectUrl} />
         <meta
           property="og:title"
-          content={`${project.Title} — Eki Zulfar Rachman`}
+          content={`${project.Title} — Breno Alves`}
         />
         <meta
           property="og:description"
@@ -192,8 +192,8 @@ const ProjectDetails = () => {
             "url": "${projectUrl}",
             "author": {
               "@type": "Person",
-              "name": "Eki Zulfar Rachman",
-              "url": "https://ekizr.com"
+              "name": "Breno Alves",
+              "url": "https://www.linkedin.com/in/devbrenoalves/"
             }
           }
         `}</script>
