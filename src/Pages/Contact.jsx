@@ -35,8 +35,8 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     Swal.fire({
-      title: 'Mengirim Pesan...',
-      html: 'Harap tunggu selagi kami mengirim pesan Anda',
+      title: 'Enviando mensagem...',
+      html: 'Aguarde enquanto enviamos sua mensagem.',
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
@@ -45,7 +45,7 @@ const ContactPage = () => {
 
     try {
       // Ganti dengan email Anda di FormSubmit
-      const formSubmitUrl = 'https://formsubmit.co/ekizulfarrachman@gmail.com';
+      const formSubmitUrl = 'https://formsubmit.co/a46586d89e8b8635aa489159aafe76c4';
       
       // Siapkan data form untuk FormSubmit
       const submitData = new FormData();
@@ -64,8 +64,8 @@ const ContactPage = () => {
 
      
       Swal.fire({
-        title: 'Berhasil!',
-        text: 'Pesan Anda telah berhasil terkirim!',
+        title: 'Sucesso!',
+        text: 'Sua mensagem foi enviada com sucesso!',
         icon: 'success',
         confirmButtonColor: '#6366f1',
         timer: 2000,
@@ -81,8 +81,8 @@ const ContactPage = () => {
     } catch (error) {
       if (error.request && error.request.status === 0) {
         Swal.fire({
-          title: 'Berhasil!',
-          text: 'Pesan Anda telah berhasil terkirim!',
+          title: 'Sucesso!',
+          text: 'Sua mensagem foi enviada com sucesso!',
           icon: 'success',
           confirmButtonColor: '#6366f1',
           timer: 2000,
@@ -97,7 +97,7 @@ const ContactPage = () => {
       } else {
         Swal.fire({
           title: 'Gagal!',
-          text: 'Terjadi kesalahan. Silakan coba lagi nanti.',
+          text: 'Ocorreu um erro. Tente novamente mais tarde.',
           icon: 'error',
           confirmButtonColor: '#6366f1'
         });
